@@ -1,0 +1,22 @@
+#ifndef __COMMENT__H__
+#define __COMMENT__H__
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+#define READ_FILE_NAME "input.c"
+#define WRITE_FILE_NAME "output.c"
+
+typedef enum STATE
+{
+	NULL_STATE,
+	C_STATE,
+	CPP_STATE,
+	END_STATE
+}STATE;
+
+void DoConvert(char* ReadFile, char* WriteFile);
+void CommentConvert();
+#endif
+
